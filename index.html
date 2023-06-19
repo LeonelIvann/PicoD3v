@@ -9,7 +9,8 @@
     <link rel="shortcut icon" href="/favicon.png" type="image/png">
     <meta name="description"
         content="PicoD3v es una agencia de desarrollo web en General Pico, La Pampa. Ofrecemos soluciones digitales para comercios, incluyendo landing pages y tiendas en línea.">
-    <meta name="keywords" content="PicoDev, desarrollo web, General Pico, La Pampa, ecommerce, soluciones digitales">
+    <meta name="keywords"
+        content="picod3v general pico, PicoDev, desarrollo web, General Pico, La Pampa, ecommerce, soluciones digitales">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
     <!--Replace with your tailwind.css once created-->
     <link href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css" rel="stylesheet" />
@@ -35,9 +36,9 @@
         }
 
         /* Browser mockup code
- * Contribute: https://gist.github.com/jarthod/8719db9fef8deb937f4f
- * Live example: https://updown.io
- */
+        *   Contribute: https://gist.github.com/jarthod/8719db9fef8deb937f4f
+        *   Live example: https://updown.io
+        */
 
         .browser-mockup {
             border-top: 2em solid rgba(230, 230, 230, 0.7);
@@ -66,7 +67,7 @@
             width: max-content;
             position: absolute;
             top: 39%;
-            left: 50%;
+            left: 49%;
             transform: translate(-54%, -50%);
             z-index: 2;
             margin-right: 20vw;
@@ -84,6 +85,21 @@
                 display: none;
             }
         }
+
+        @media (min-width: 365px) and (max-width: 780px) {
+            #formulario {
+                width: 350px;
+                position: absolute;
+                top: 52.7vh;
+                left: 0;
+                z-index: 2;
+                border-radius: 8px;
+                margin-left: 53%;
+                margin-right: 50%;
+                font-size: 0.8rem;
+            }
+        }
+
 
         .style-nav-responsive {
             --tw-text-opacity: 1;
@@ -117,25 +133,27 @@
                     <input type="hidden" name="apikey" value="a20c667f-577f-4136-a802-f443100da63e">
                     <input type="hidden" name="subject" value="New Submission from Web3Forms">
                     <input type="checkbox" name="botcheck" id="" style="display: none;">
-                    <div class="mb-4">
+                    <div class="mb-2">
                         <label for="full_name" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Nombre /
                             Empresa</label>
                         <input type="text" name="name" id="full_name" placeholder="Lucia" required
                             class="w-full px-3 py-2 bg-white placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300">
                     </div>
-                    <div class="mb-4">
+                    <div class="mb-2">
                         <label for="phone" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Celular</label>
                         <input type="tel" name="phone" id="phone" placeholder="+54 2302 321456" required
                             class="w-full px-3 py-2 bg-white placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300">
                     </div>
-                    <div class="mb-4">
+                    <div class="mb-2">
                         <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email</label>
                         <input type="email" name="email" id="email" placeholder="tu@negocio.com"
                             class="w-full px-3 py-2 bg-white placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300">
                     </div>
-                    <div class="mb-4">
+                    <div class="mb-2">
                         <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Mensaje</label>
-                        <textarea rows="4" name="message" id="message" placeholder="Aquí puedes escribir tus dudas, preguntas o contarnos lo que quieres hacer" class="w-full h-28 px-3 py-2 bg-white placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
+                        <textarea rows="4" name="message" id="message"
+                            placeholder="Aquí puedes escribir tus dudas, preguntas o contarnos lo que quieres hacer"
+                            class="w-full h-28 px-3 py-2 bg-white placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
                             required></textarea>
                     </div>
                     <div class="h-captcha" data-captcha="true"></div>
@@ -698,11 +716,13 @@
                     <ul class="list-reset mb-6">
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
                             <a href="https://www.instagram.com/picod3v/"
-                                class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500" target="_blank">Instagram</a>
+                                class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
+                                target="_blank">Instagram</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
                             <a href="https://www.linkedin.com/in/leonelivan/"
-                                class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500" target="_blank">Linkedin</a>
+                                class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
+                                target="_blank">Linkedin</a>
                         </li>
                     </ul>
                 </div>
